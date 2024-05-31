@@ -1,0 +1,151 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+header {
+    background-color: #fe938c;
+    color: white;
+    padding: 35px 0;
+    padding-bottom: 0px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.logo img {
+    height: 80px;
+    position: absolute;
+    left: 20px;
+    top: 10px;
+    border-radius: 50%;
+}
+
+h1 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 3rem;
+    margin: 0;
+    color:#000000;
+    margin-bottom: 10px;
+}
+
+nav {
+    background-color: #ead2ac;
+    color: white;
+    padding: 10px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+    color:#000000;
+}
+
+nav ul li a:hover {
+    color: #ffd700; /* Gold */
+}
+
+main {
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: 40px auto;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #ff6347;
+    border-bottom: 2px solid #ff6347;
+    padding-bottom: 10px;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    background-color: #fff5f5;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.1rem;
+}
+
+ul li:nth-child(odd) {
+    background-color: #ffecec;
+    border-radius: 10px;
+}
+
+ul li .name {
+    flex-grow: 1;
+}
+
+ul li .price {
+    text-align: right;
+    width: 80px;
+}
+
+footer {
+    background-color: #ead2ac;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px 10px 0 0;
+}
+
+/* Responsywność */
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    header {
+        padding: 10px 0;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    main {
+        padding: 20px 10px;
+        margin: 20px auto;
+    }
+}
